@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BB134D47D8F084FFE05DFFE6 /* Pods_EmotionDiary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A02DFA0DA877149F04DAB037 /* Pods_EmotionDiary.framework */; };
 		CB78932B299163BD000A735E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB78932A299163BD000A735E /* AppDelegate.swift */; };
 		CB78932D299163BD000A735E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB78932C299163BD000A735E /* SceneDelegate.swift */; };
 		CB789335299163BD000A735E /* EmotionDiary.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CB789333299163BD000A735E /* EmotionDiary.xcdatamodeld */; };
@@ -18,9 +19,17 @@
 		CB78934C29916696000A735E /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB78934B29916696000A735E /* TabBarController.swift */; };
 		CB78934E2991674D000A735E /* Stats.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB78934D2991674D000A735E /* Stats.storyboard */; };
 		CB78935029916754000A735E /* MyInfo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB78934F29916754000A735E /* MyInfo.storyboard */; };
+		CB7893542995179F000A735E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7893532995179F000A735E /* HomeViewController.swift */; };
+		CB789356299517FD000A735E /* CodeTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB789355299517FD000A735E /* CodeTabBarController.swift */; };
+		CB78935829952005000A735E /* StatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB78935729952005000A735E /* StatsViewController.swift */; };
+		CB78935A29952149000A735E /* StatsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB78935929952149000A735E /* StatsTableViewCell.swift */; };
+		CB950EE5299620130083B419 /* MyInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB950EE4299620130083B419 /* MyInfoViewController.swift */; };
+		CBD1BC88299A826300AD1A7C /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD1BC87299A826300AD1A7C /* HomeCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		243CFE1544B865822C2BF65D /* Pods-EmotionDiary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmotionDiary.release.xcconfig"; path = "Target Support Files/Pods-EmotionDiary/Pods-EmotionDiary.release.xcconfig"; sourceTree = "<group>"; };
+		A02DFA0DA877149F04DAB037 /* Pods_EmotionDiary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EmotionDiary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB789327299163BD000A735E /* EmotionDiary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmotionDiary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB78932A299163BD000A735E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB78932C299163BD000A735E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -34,6 +43,13 @@
 		CB78934B29916696000A735E /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		CB78934D2991674D000A735E /* Stats.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Stats.storyboard; sourceTree = "<group>"; };
 		CB78934F29916754000A735E /* MyInfo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyInfo.storyboard; sourceTree = "<group>"; };
+		CB7893532995179F000A735E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		CB789355299517FD000A735E /* CodeTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeTabBarController.swift; sourceTree = "<group>"; };
+		CB78935729952005000A735E /* StatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsViewController.swift; sourceTree = "<group>"; };
+		CB78935929952149000A735E /* StatsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsTableViewCell.swift; sourceTree = "<group>"; };
+		CB950EE4299620130083B419 /* MyInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyInfoViewController.swift; sourceTree = "<group>"; };
+		CBD1BC87299A826300AD1A7C /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
+		F422668208BC875931D822B1 /* Pods-EmotionDiary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmotionDiary.debug.xcconfig"; path = "Target Support Files/Pods-EmotionDiary/Pods-EmotionDiary.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,17 +57,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB134D47D8F084FFE05DFFE6 /* Pods_EmotionDiary.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		649B11758964B51D1D986604 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F422668208BC875931D822B1 /* Pods-EmotionDiary.debug.xcconfig */,
+				243CFE1544B865822C2BF65D /* Pods-EmotionDiary.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		CB78931E299163BD000A735E = {
 			isa = PBXGroup;
 			children = (
 				CB789329299163BD000A735E /* EmotionDiary */,
 				CB789328299163BD000A735E /* Products */,
+				649B11758964B51D1D986604 /* Pods */,
+				EED28E92AA158F6FF5FC5231 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -104,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				CB78934B29916696000A735E /* TabBarController.swift */,
+				CB789355299517FD000A735E /* CodeTabBarController.swift */,
 			);
 			path = TabBar;
 			sourceTree = "<group>";
@@ -112,6 +141,8 @@
 			isa = PBXGroup;
 			children = (
 				CB78934929916679000A735E /* HomeVC.swift */,
+				CB7893532995179F000A735E /* HomeViewController.swift */,
+				CBD1BC87299A826300AD1A7C /* HomeCollectionViewCell.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -119,6 +150,8 @@
 		CB7893512991675A000A735E /* Stats */ = {
 			isa = PBXGroup;
 			children = (
+				CB78935729952005000A735E /* StatsViewController.swift */,
+				CB78935929952149000A735E /* StatsTableViewCell.swift */,
 			);
 			path = Stats;
 			sourceTree = "<group>";
@@ -126,8 +159,17 @@
 		CB7893522991675F000A735E /* MyInfo */ = {
 			isa = PBXGroup;
 			children = (
+				CB950EE4299620130083B419 /* MyInfoViewController.swift */,
 			);
 			path = MyInfo;
+			sourceTree = "<group>";
+		};
+		EED28E92AA158F6FF5FC5231 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A02DFA0DA877149F04DAB037 /* Pods_EmotionDiary.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,9 +179,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CB78933E299163BE000A735E /* Build configuration list for PBXNativeTarget "EmotionDiary" */;
 			buildPhases = (
+				A91EBF7DE45D5F93E5895301 /* [CP] Check Pods Manifest.lock */,
 				CB789323299163BD000A735E /* Sources */,
 				CB789324299163BD000A735E /* Frameworks */,
 				CB789325299163BD000A735E /* Resources */,
+				26F69819932B2CCF2218E1C3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -199,6 +243,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		26F69819932B2CCF2218E1C3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EmotionDiary/Pods-EmotionDiary-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EmotionDiary/Pods-EmotionDiary-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EmotionDiary/Pods-EmotionDiary-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A91EBF7DE45D5F93E5895301 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EmotionDiary-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CB789323299163BD000A735E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -206,9 +292,15 @@
 			files = (
 				CB789335299163BD000A735E /* EmotionDiary.xcdatamodeld in Sources */,
 				CB78934A29916679000A735E /* HomeVC.swift in Sources */,
+				CB950EE5299620130083B419 /* MyInfoViewController.swift in Sources */,
+				CB78935829952005000A735E /* StatsViewController.swift in Sources */,
+				CB789356299517FD000A735E /* CodeTabBarController.swift in Sources */,
 				CB78932B299163BD000A735E /* AppDelegate.swift in Sources */,
+				CBD1BC88299A826300AD1A7C /* HomeCollectionViewCell.swift in Sources */,
 				CB78934C29916696000A735E /* TabBarController.swift in Sources */,
 				CB78932D299163BD000A735E /* SceneDelegate.swift in Sources */,
+				CB78935A29952149000A735E /* StatsTableViewCell.swift in Sources */,
+				CB7893542995179F000A735E /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +436,7 @@
 		};
 		CB78933F299163BE000A735E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F422668208BC875931D822B1 /* Pods-EmotionDiary.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -351,18 +444,23 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4778CKJ7UW;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SnapKit\"",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = EmotionDiary/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = TabBar;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = "";
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.haon.EmotionDiary;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -375,6 +473,7 @@
 		};
 		CB789340299163BE000A735E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 243CFE1544B865822C2BF65D /* Pods-EmotionDiary.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -382,18 +481,23 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4778CKJ7UW;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SnapKit\"",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = EmotionDiary/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = TabBar;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = "";
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.haon.EmotionDiary;
 				PRODUCT_NAME = "$(TARGET_NAME)";

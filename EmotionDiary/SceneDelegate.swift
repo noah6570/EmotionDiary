@@ -15,14 +15,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
   func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
     
     guard let windowScene = (scene as? UIWindowScene) else { return }
-    let window = UIWindow(windowScene: windowScene)
-    let storyboard = UIStoryboard(name: "TabBar", bundle: nil)
-    let rootVC = storyboard.instantiateViewController(identifier: "TabBarController")
-//    let navigation = UINavigationController(rootViewController: rootVC)
-    window.rootViewController = rootVC
-    
-    self.window = window
-    window.makeKeyAndVisible()
+    window = UIWindow(windowScene: windowScene) // SceneDelegate의 프로퍼티에 설정해줌
+    let codeTabBarController = CodeTabBarController() // 맨 처음 보여줄 ViewController
+
+    window?.rootViewController = codeTabBarController
+    window?.makeKeyAndVisible()
   }
   
   func sceneDidDisconnect(_ scene: UIScene) {

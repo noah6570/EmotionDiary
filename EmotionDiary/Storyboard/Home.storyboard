@@ -362,10 +362,61 @@
                     <tabBarItem key="tabBarItem" title="홈" image="house.fill" catalog="system" id="JfF-o9-Jrm"/>
                     <navigationItem key="navigationItem" title="감정일기" id="OKU-Gb-pF1"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="backView1" destination="ASi-8i-0KO" id="Ayz-3W-uP3"/>
+                        <outlet property="backView2" destination="FU9-aD-Drb" id="RFm-vC-wck"/>
+                        <outlet property="backView3" destination="BNG-3x-0ad" id="Y4m-Hb-qzN"/>
+                        <outlet property="backgroundStackView" destination="I6v-0M-CiZ" id="f44-yQ-3d3"/>
+                        <outlet property="countLabel1" destination="pL1-BU-6dl" id="DLM-5t-N11"/>
+                        <outlet property="countLabel2" destination="FLD-6q-da9" id="4rM-tJ-mAA"/>
+                        <outlet property="countLabel3" destination="LXJ-qc-GhK" id="KZP-3x-Z4K"/>
+                        <outlet property="emtionButton1" destination="7jr-Mh-Eax" id="9Bz-7t-TxM"/>
+                        <outlet property="emtionButton2" destination="Pue-Af-WnB" id="HWm-ha-KBf"/>
+                        <outlet property="emtionButton3" destination="O7g-7U-S7i" id="sig-o0-LN9"/>
+                        <outlet property="firstStackView" destination="DXi-YD-tvP" id="wv8-ta-OYW"/>
+                        <outlet property="secondStackView" destination="AQD-Et-rYP" id="6Ru-Lp-BRh"/>
+                        <outlet property="thirdStackView" destination="3dI-ia-eFR" id="5yl-NE-8ZW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8di-ca-YrV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="20" y="94"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="D4l-A1-ZzP">
+            <objects>
+                <viewController id="xbc-1G-DvF" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nCT-py-SZB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="안녕하세요안녕하세요안녕하세요안녕하세요안녕" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cM1-Zn-deE">
+                                <rect key="frame" x="20" y="64" width="324" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lmG-sO-PYX">
+                                <rect key="frame" x="359" y="64" width="35" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="AaI-D0-YS5"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="cM1-Zn-deE" firstAttribute="leading" secondItem="AaI-D0-YS5" secondAttribute="leading" constant="20" id="1vh-hx-KLf"/>
+                            <constraint firstItem="lmG-sO-PYX" firstAttribute="leading" secondItem="cM1-Zn-deE" secondAttribute="trailing" constant="15" id="7qn-fr-lhu"/>
+                            <constraint firstItem="lmG-sO-PYX" firstAttribute="top" secondItem="AaI-D0-YS5" secondAttribute="top" constant="20" id="eUo-SR-DAG"/>
+                            <constraint firstItem="cM1-Zn-deE" firstAttribute="top" secondItem="AaI-D0-YS5" secondAttribute="top" constant="20" id="wr8-lq-jZs"/>
+                            <constraint firstItem="AaI-D0-YS5" firstAttribute="trailing" secondItem="lmG-sO-PYX" secondAttribute="trailing" constant="20" id="zhg-Al-Knr"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZHQ-Ua-ABb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="996" y="90"/>
         </scene>
     </scenes>
     <resources>
