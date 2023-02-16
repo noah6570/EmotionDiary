@@ -20,15 +20,12 @@ class HomeCollectionViewCell: UICollectionViewCell {
     }
     
     let emotionButton = UIButton().then {
-//        $0.layer.borderWidth = 0.5
-//        $0.layer.borderColor = UIColor.red.cgColor
         $0.titleLabel?.font = .systemFont(ofSize: 35)
+        $0.isUserInteractionEnabled = false
         $0.setTitle("😀", for: .normal)
     }
     
     let countLabel = UILabel().then {
-//        $0.layer.borderWidth = 0.5
-//        $0.layer.borderColor = UIColor.blue.cgColor
         $0.font = .systemFont(ofSize: 16)
         $0.text = "0번"
     }

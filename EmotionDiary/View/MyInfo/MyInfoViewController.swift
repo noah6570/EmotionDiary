@@ -9,6 +9,11 @@ import UIKit
 
 class MyInfoViewController: UIViewController {
     
+    
+    /// 계산이 들어가는 기능 3가지
+    ///  D day
+    ///  태어난 날짜 계산
+    
     let nameLabel = UILabel().then {
         $0.font = .systemFont(ofSize: 16)
         $0.text = "내 정보"

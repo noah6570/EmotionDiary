@@ -25,6 +25,8 @@
 		CB78935A29952149000A735E /* StatsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB78935929952149000A735E /* StatsTableViewCell.swift */; };
 		CB950EE5299620130083B419 /* MyInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB950EE4299620130083B419 /* MyInfoViewController.swift */; };
 		CBD1BC88299A826300AD1A7C /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD1BC87299A826300AD1A7C /* HomeCollectionViewCell.swift */; };
+		CBD1BC8B299BAD7700AD1A7C /* Emotion.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD1BC8A299BAD7700AD1A7C /* Emotion.swift */; };
+		CBD1BC8E299BBB4D00AD1A7C /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD1BC8D299BBB4D00AD1A7C /* HomeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +51,8 @@
 		CB78935929952149000A735E /* StatsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsTableViewCell.swift; sourceTree = "<group>"; };
 		CB950EE4299620130083B419 /* MyInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyInfoViewController.swift; sourceTree = "<group>"; };
 		CBD1BC87299A826300AD1A7C /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
+		CBD1BC8A299BAD7700AD1A7C /* Emotion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emotion.swift; sourceTree = "<group>"; };
+		CBD1BC8D299BBB4D00AD1A7C /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		F422668208BC875931D822B1 /* Pods-EmotionDiary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmotionDiary.debug.xcconfig"; path = "Target Support Files/Pods-EmotionDiary/Pods-EmotionDiary.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -94,7 +98,9 @@
 		CB789329299163BD000A735E /* EmotionDiary */ = {
 			isa = PBXGroup;
 			children = (
-				CB7893462991665B000A735E /* ViewController */,
+				CBD1BC8C299BBB3000AD1A7C /* ViewModel */,
+				CBD1BC89299BAD6900AD1A7C /* Model */,
+				CB7893462991665B000A735E /* View */,
 				CB7893432991662E000A735E /* Storyboard */,
 				CB78932A299163BD000A735E /* AppDelegate.swift */,
 				CB78932C299163BD000A735E /* SceneDelegate.swift */,
@@ -117,7 +123,7 @@
 			path = Storyboard;
 			sourceTree = "<group>";
 		};
-		CB7893462991665B000A735E /* ViewController */ = {
+		CB7893462991665B000A735E /* View */ = {
 			isa = PBXGroup;
 			children = (
 				CB78934729916662000A735E /* TabBar */,
@@ -125,7 +131,7 @@
 				CB78934829916665000A735E /* Home */,
 				CB7893522991675F000A735E /* MyInfo */,
 			);
-			path = ViewController;
+			path = View;
 			sourceTree = "<group>";
 		};
 		CB78934729916662000A735E /* TabBar */ = {
@@ -162,6 +168,22 @@
 				CB950EE4299620130083B419 /* MyInfoViewController.swift */,
 			);
 			path = MyInfo;
+			sourceTree = "<group>";
+		};
+		CBD1BC89299BAD6900AD1A7C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CBD1BC8A299BAD7700AD1A7C /* Emotion.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CBD1BC8C299BBB3000AD1A7C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CBD1BC8D299BBB4D00AD1A7C /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		EED28E92AA158F6FF5FC5231 /* Frameworks */ = {
@@ -298,9 +320,11 @@
 				CB78932B299163BD000A735E /* AppDelegate.swift in Sources */,
 				CBD1BC88299A826300AD1A7C /* HomeCollectionViewCell.swift in Sources */,
 				CB78934C29916696000A735E /* TabBarController.swift in Sources */,
+				CBD1BC8E299BBB4D00AD1A7C /* HomeViewModel.swift in Sources */,
 				CB78932D299163BD000A735E /* SceneDelegate.swift in Sources */,
 				CB78935A29952149000A735E /* StatsTableViewCell.swift in Sources */,
 				CB7893542995179F000A735E /* HomeViewController.swift in Sources */,
+				CBD1BC8B299BAD7700AD1A7C /* Emotion.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

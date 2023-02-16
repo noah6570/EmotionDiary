@@ -19,7 +19,6 @@ class StatsTableViewCell: UITableViewCell {
     
     let countLabel = UILabel()
     
-    // 이모지, 이모지 이름, 횟수
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -32,18 +31,12 @@ class StatsTableViewCell: UITableViewCell {
         self.contentView.addSubview(emotionNameLabel)
         self.contentView.addSubview(countLabel)
         
-        emotionLabel.text = "😀"
         emotionLabel.font = .systemFont(ofSize: 30)
         
-        emotionNameLabel.text = "안녕하세요."
         emotionNameLabel.font = .systemFont(ofSize: 16)
         
-        countLabel.text = "0번"
         countLabel.font = .systemFont(ofSize: 15)
     }
-    
-    // 픽셀과 포인트의 차이 알아보기 !
-    // huggingPriority 찾아보기 !
     
     private func setupConstraints() {
         emotionLabel.snp.makeConstraints { make in
